@@ -1,0 +1,113 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head><title>PORTFOLIO</title></head>
+    <body style="background-color:bisque">
+        <div class="navbar">
+            <a href="#abt">About</a>
+            <a href="#skls">Skills</a>
+            <a href="#res">Resume</a>
+            <a href="#cer">Certificates</a>
+            <a href="#cont">Contact</a>
+        </div>
+        <div class="name">
+            <h1>Hi,I'm</h1>
+            <h1>Jeffery Abijah</h1>
+            <h4>Full Stack Developer</h4>
+            <h4>From Frontend Flourishes to Backend Brilliance: A Full Stack Developer's Journey</h4>
+        </div>
+        <div class="about" id="abt">
+            <h2>About</h2>
+            <p>Welcome to my digital home! I'm Jeffery , a passionate full stack developer with a love for crafting innovative solutions that blend the art of design with the science of programming. With a keen eye for detail and a drive for excellence, I specialize in creating seamless, user-centric experiences that leave a lasting impact. </p>
+            <p>My journey in the world of technology is fueled by curiosity and a commitment to continuous learning, ensuring that I stay at the forefront of emerging trends and technologies. Explore my portfolio to witness the intersection of creativity and functionality, where every line of code is a step towards transforming ideas into reality.</p>
+        </div>
+        <div class="skills" id="skls">
+            <h2>Skills</h2>
+        </div>
+        <div class="section">
+            <div>
+                <h3>Frontend Developer</h3>
+                <p>Detail-oriented frontend developer with a passion for creating visually appealing and user-friendly interfaces. Proficient in HTML, CSS, and JavaScript, with experience in frontend frameworks such as React and Angular. Skilled in collaborating with designers and backend developers to deliver high-quality web applications.</p>
+            </div>
+            <div>
+                <h3>Backend Developer</h3>
+                <p>Experienced backend developer with a focus on building scalable and efficient web applications. Proficient in programming languages such as Java,Node.js, with a strong understanding of database management systems like MySQL, MongoDB.</p>
+            </div>
+            <div>
+                <h3>Database Management</h3>
+                <p>Strong problem-solving skills and a commitment to ensuring data integrity and availability. Experienced in collaborating with developers and stakeholders to meet business requirements and improve data management processes.</p>
+            </div>
+            <div>
+                <h3>Problem Solving</h3>
+                <p>Detail-oriented problem solver with a strong analytical mindset and a track record of finding innovative solutions. Experienced in identifying issues, analyzing root causes, and developing effective strategies to address complex problems.</p>
+            </div>
+            <div>
+                <h3>Communication</h3>
+                <p>Effective communicator with a proven ability to convey complex ideas clearly and concisely. Experienced in collaborating with diverse teams to achieve common goals and deliver high-quality results. Skilled in active listening, negotiation, and conflict resolution to ensure productive working relationships.</p>
+            </div>
+        </div>
+        <div class="resume" id="res">
+            <h2>Resume</h2>
+            <p>As a full-stack developer, I leverage my expertise in front-end and back-end technologies to create dynamic and responsive web applications. With proficiency in HTML/CSS, JavaScript, Node.js, and various databases.</p>
+            <p>I am adept at designing and implementing scalable solutions that meet client needs. My strong problem-solving skills and commitment to staying updated with the latest technologies enable me to deliver high-quality code and exceptional user experiences</p>
+        </div>
+        <div class="ressec">
+            <a target="_blank" href="file:///C:/Users/Admin/Downloads/resume.pdf">See My Resume</a>
+        </div>
+        <div class="certi" id="cer">
+            <h2>Certificates</h2>
+        </div>
+        <div class="certisec">
+            <div>
+                <h3>Problem Solving Through Programming In C - NPTEL</h3>
+                <a target="_blank" href="file:///C:/Users/Admin/Desktop/certificates/Problem%20Solving%20Through%20Programming%20In%20C%20(2).pdf">View</a>
+            </div>
+            <div>
+                <h3>HTML and CSS - GUVI</h3>
+                <a target="_blank" href="C:\Users\Admin\Desktop\certificates\HTML and CSS GUVI.png">View</a>
+            </div>
+            <div>
+                <h3>Javascript - GUVI</h3>
+                <a target="_blank" href="C:\Users\Admin\Desktop\certificates\Javascript GUVI.png">View</a>
+            </div>
+            <div>
+                <h3>Basics Of Python - Infosys Springboard</h3>
+                <a target="_blank" href="C:/Users/Admin/Desktop/certificates/infosys%20basics%20of%20python.pdf">View</a>
+            </div>
+            <div>
+                <h3>Programming with Python - Internshala</h3>
+                <a target="_blank" href="file:///C:/Users/Admin/Desktop/certificates/Programming%20with%20Python%20Training%20-%20Certificate%20of%20Completion.pdf">View</a>
+            </div>
+        </div>
+        <div class="contact" id="cont">
+            <h2>Contact</h2>
+        </div>
+        <div class="insec">
+            <div class="name">
+                <input type="text" placeholder="Your Name" id="nam">
+                <input type="text" placeholder="Your Mail" id="mail">
+            </div>
+            <div class="mes">
+                <input type="text" placeholder="Message" id="mes">
+
+            </div>
+        </div>
+        <div class="messub">
+            <p style="color:red; margin-left: 360px;" id="msg"></p>
+            <button onclick="disp()">Send Message</button>
+        </div>
+    </body>
+    <script>
+        var mes=document.getElementById("mes");
+        var msg=document.getElementById("msg");
+        var nam=document.getElementById("nam")
+        var mail=document.getElementById("mail")
+        function disp(){
+            if(mes.value!=""){
+                msg.textContent="Message sent successfuly!!"
+                mes.value=""
+                nam.value=""
+                mail.value=""
+            }
+        }
+
+    </script>
